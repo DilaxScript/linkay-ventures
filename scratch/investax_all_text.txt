@@ -1,0 +1,175 @@
+a (['button-8', 'w-button']): About
+a (['button-8', 'w-button']): Tokenization Consulting
+a (['button-8', 'w-button', 'w--current']): Licensed Tokenization Platform
+a (['button-8', 'w-button']): Deals
+a (['button-8', 'w-button']): RWA Vaults
+a (['button-8', 'w-button']): Education
+a (['button-8', 'w-button']): Partners
+a (['button-8', 'w-button']): Contact
+div (None): Sign In
+div (None): Sign Up
+div (None): About
+div (None): Tokenization
+div (['text-block-163']): Tokenization Consulting
+div (['text-block-164']): Licensed Tokenization Platform
+div (None): Investment
+div (['text-block-163']): Deals
+div (['text-block-164']): RWA Vaults
+div (None): Education
+div (None): Partners
+div (None): Contact
+div (None): Launch App
+div (None): About
+div (None): Tokenization
+div (['text-block-163']): Tokenization Consulting
+div (['text-block-164']): Licensed Tokenization Platform
+div (None): Investment
+div (['text-block-163']): Deals
+div (['text-block-164']): RWA Vaults
+div (None): Education
+div (None): Partners
+div (None): Contact
+div (None): Launch Now
+div (['text-block-162']): Stay informed on RWA tokenization
+div (['text-block-161']): By clicking "Submit". I confirm that I have read and agree to the , , and to receive emails and updates.
+a (['link-8']): Privacy Policy
+a (['link-8']): Terms and Conditions
+div (['text-block-162', '_1']): Thank you
+div (['text-block-162-copy']): Thank you! Your form has been successfully submitted,and you can now download the eVCC file
+a (['ixs-submit', 'w-button']): Download now
+div (None): Oops! Something went wrong.
+h1 (['text-block-28']): Licensed Tokenization Platform
+div (['text-block-3', 'short-text']): InvestaX operates a licensed tokenization platform for real-world assets (RWA), covering token issuance, secondary trading, secure custody and post-tokenization management within regulated environments.
+a (['button', 'w-button']): Get in touch
+a (['button', 'is-secondary', 'w-button']): WATCH DEMO
+h2 (['h2', 'left-align']): WE WORK WITHGLOBAL BRANDS
+div (['text-block-26']): ethereum
+div (['text-block-167']): Licensed by the Monetary Authority of Singapore
+div (['text-block-168']): Capital Markets Services License (CMS) to deal in securities and collective investment schemes
+div (['text-block-168']): Recognized Market Operator License (RMO) to operate an organised market for securities
+div (['text-block-168']): Exempt Financial Advisor to provide advice on units in collective investment schemes
+a (['button', 'is-secondary', 'w-button']): Our Projects
+h2 (['text-block-169']): One-stop Shop Solution for Asset Tokenization
+div (['text-block-11']): Token Issuance
+div (['text-block-11']): Primary Offering
+div (['text-block-11']): Secondary Trading
+div (['text-block-11']): Custody Solutions
+div (['text-block-11']): Life Cycle Management
+div (['text-block-11']): Co-Branded Platform
+div (['text-block-190']): For Issuer
+div (['text-block-189']): Token Issuance
+div (['text-block-3-copy']): Seamlessly tokenize your real-world assets (RWAs) and get ready to launch your tokenized offerings globally on our Singapore-licensed marketplace.
+div (['text-block-3-copy-copy']): Proprietary token issuance technology
+div (['text-block-3-copy-copy']): Customizable security token offering
+div (['text-block-3-copy-copy']): Smart contract development
+div (['text-block-3-copy-copy']): Onboarding and whitelisting of investors
+div (['text-block-190']): For Issuer
+div (['text-block-189']): Primary Offering
+div (['text-block-3-copy']): Utilize our licensed marketplace in Singapore and distribution partners to conduct token offering to global investors.
+div (['text-block-3-copy-copy']): Distribution on InvestaX platform
+div (['text-block-3-copy-copy']): Distribution through InvestaX's distribution partners
+div (['text-block-3-copy-copy']): Investor roadshows
+div (['text-block-190']): FOR INVESTOR
+div (['text-block-189']): Secondary Trading
+div (['text-block-3-copy']): Beyond primary offering, list RWA tokens on our licensed secondary marketplace to enhance liquidity and flexibility for RWA token investors. InvestaX offers:
+div (['text-block-3-copy-copy']): Peer-to-Peer Trading Marketplace
+div (['text-block-3-copy-copy']): Centralized Secondary Trading Venue ('IX Exchange')
+div (['text-block-190']): FOR ISSUER & INVESTOR
+div (['text-block-189']): Custody Solutions
+div (['text-block-3-copy']): Securely store and manage your RWA tokens with our qualified custodian.
+div (['text-block-3-copy-copy']): Safekeep and store your RWA tokens with a licensed digital asset custodian
+div (['text-block-3-copy-copy']): Regulatory compliant and Insurance coverage
+div (['text-block-3-copy-copy']): Whitelisting
+div (['text-block-3-copy-copy']): Comprehensive reporting and auditing
+div (['text-block-190']): FOR ISSUER
+div (['text-block-189']): Life Cycle Management
+div (['text-block-3-copy']): Manage your tokenized assets seamlessly. Track, service, monitor, and report throughout their lifecycle.
+div (['text-block-3-copy-copy']): Asset servicing
+div (['text-block-3-copy-copy']): Track and manage digital asset portfolio
+div (['text-block-3-copy-copy']): Compliance and governance
+div (['text-block-3-copy-copy']): Monitor transaction and receive reports
+div (['text-block-190']): FOR ISSUER
+div (['text-block-189']): Co-Branded Platform
+div (['text-block-3-copy']): Launch co-branded section of your company on a licensed platform to create RWA offerings for global distribution.
+div (['text-block-3-copy-copy']): Showcase your tokenized offerings on a custom domain with a custom logo
+div (['text-block-3-copy-copy']): Our platform, your brand
+div (['text-block-3-copy-copy']): Full license and tech integration, reduce time-to-market
+a (['button', 'w-button']): Watch Demo
+div (['pioners-h1', '_23']): Benefits Of Using Our Tokenization Saas Platform
+a (['button', 'is-secondary', 'hide', 'w-button']): Learn More
+h2 (['h2', 'left-align']): Platform Benefits
+div (['text-block-11-copy', '_1']): Complete Tokenization Solution
+div (['pioneers-points', '_1']): InvestaX's asset tokenization platform offers comprehensive management of the entire RWA token life cycle, meeting the requirements of both issuers and investors.
+div (['text-block-11-copy', '_1']): Regulatory Compliance
+div (['pioneers-points', '_1']): Our platform is fully licensed by Monetary Authority of Singapore (MAS) for issuing and trading any RWA token for global investors.
+div (['text-block-11-copy', '_1']): Diverse Asset Support
+div (['pioneers-points', '_1']): Tokenize a wide array of assets, including tangible and intangible assets, financial instruments, and fiat currency.
+div (['text-block-11-copy', '_1']): Unlimited Tokenized Assets
+div (['pioneers-points', '_1']): Unlimited number of assets that can be tokenized and listed on our tokenization platform when using our Tokenization SaaS delivery model.
+div (['text-block-11-copy', '_1']): Frictionless Distribution
+div (['pioneers-points', '_1']): Our secondary marketplace and distribution partner network unlock global investors for your tokenized assets.
+div (['text-block-11-copy', '_1']): Robust Blockchain Technology
+div (['pioneers-points', '_1']): Choice of leading blockchain protocols for tokenization, including Ethereum, Polygon, BASE, Algorand, Tezos, Hedera, and Kaia.
+div (['quote']): What sets this (InvestaX’s tokenization project) apart is InvestaX's status as a licensed platform, allowing for regulatorily compliant issuance and trading of digital asset securities or security tokens.
+div (['text-block-77']): The Asset Tokenization C-Suite Playbook 2024
+div (['text-block-3']): by KPMG Singapore and Singapore FinTech Association (SFA)
+div (['text-block-169']): Assets You Can Tokenize
+div (['text-block-183']): Money Market Fund
+div (['text-block-182']): Learn More
+div (['text-block-183']): Treasury Bills
+div (['text-block-182']): Learn More
+div (['text-block-183']): Private Credit
+div (['text-block-182']): Learn More
+div (['text-block-183']): Stocks
+div (['text-block-182']): Learn More
+div (['text-block-183']): Fixed-Income
+div (['text-block-182']): Learn More
+div (['text-block-183']): Commodities
+div (['text-block-182']): Learn More
+div (['text-block-183']): Real Estate
+div (['text-block-182']): Learn More
+div (['text-block-183']): Intellectual Property
+div (['text-block-182']): Learn More
+div (['tokenization-h1', '_1']): VALUEPROPOSITIONS
+h1 (['text-block-169']): Asset Tokenization Process
+div (['text-block-10-copy']): The token issuer will register with InvestaX to create a new RWA token offering and configure the details.
+div (['text-block-10-copy']): RWA information and structure will be documented and presented in an investment memorandum, subscription agreement, teaser deck, and any other marketing material prepared by the token issuer.
+div (['text-block-10-copy']): Confirmation of token ticker and smart contract. The security tokens will then be ready for primary issuance and trading on InvestaX.
+div (['text-block-10-copy']): Investors who are qualified and onboarded by InvestaX will be able to invest using their whitelisted wallets.
+div (['text-block-10-copy']): Investors and issuers will be able to view positions, cash, and tokens.
+a (['button', 'w-button']): Get In Touch
+div (['pioners-h1', '_23']): IN PARTNERSHIP WITH IX SWAP
+div (['text-block-7', '_3']): IX Swap is a Licensed DeFi platform for primary and secondary trading of real-world and private assets. Get Exclusive Early Access - Secure Your Presale Spot by Registering Today!
+div (['text-block-20']): TOKENIZE ASSETS WITH EASE
+div (['button-2', 'is-text']): Watch our tokenization platfOrm demo
+div (['text-block-21']): 02:06
+a (['button', 'w-button']): WATCH FULL DEMO
+div (['text-block-27', '_12']): Stay Updated
+div (['text-block-3', 'short-copy-copy']): For all the latest digital asset industry news, updates, products and opportunities
+div (['submit-button', '_123']): NEXT
+div (None): Thank you! Your submission has been received!
+div (None): Oops! Something went wrong while submitting the form.
+div (['text-block-7', '_123', 'hide']): Real-world asset (RWA) tokens are digital representations of real-world assets like equity or debt in real estate and private equity. Utilizing blockchain and smart contracts, they revolutionize investments by enhancing transparency, security, and efficiency. This innovation simplifies financial transactions and expands the range of financial instruments and structures.
+div (['smallest-text', '_12-copy']): InvestaX communicates only through its official website (), official email addresses (@investax.io), and verified social media accounts listed on our official website. Any individual, chat group, social media advertisement, website, mobile application, or account claiming to represent InvestaX that is not listed on our official website should be treated as suspicious and is not affiliated with InvestaX. Before making any investment decision, always verify that you are interacting with an official InvestaX channel. Do not transfer funds, share personal information, or download applications based solely on information received through advertisements, unsolicited messages, or chat groups. If you encounter a suspicious account, advertisement, website, application, or communication claiming to represent InvestaX, please do not engage and report it immediately to us at .
+a (None): www.investax.io
+a (None): support@investax.io
+div (['text-block-10-copy-copy']): Explore
+a (['button-4', 'w-button']): Deals
+a (['button-4', 'w-button']): RWA Vaults
+a (['button-4', 'w-button', 'w--current']): Tokenization
+a (['button-4', 'w-button']): e-VCC
+div (['text-block-10-copy-copy']): Legal
+a (['button-4', 'w-button']): Disclosures
+a (['button-4', 'w-button']): Privacy Policy
+a (['button-4', 'w-button']): Terms of Use
+div (['text-block-10-copy-copy']): General
+a (['button-4', 'w-button']): About Us
+a (['button-4', 'w-button']): Careers
+a (['button-4', 'w-button']): Partnerships
+a (['button-4', 'w-button']): Brand Kit
+div (['text-block-10-copy-copy']): Support
+a (['button-4', 'w-button']): Contact Us
+div (['smallest-text', '_12']): Important Notice: “InvestaX.io is operated by IC SG Pte. Ltd. (), a Singapore private limited company (Company Registration No. 201300459N). IC SG holds a Capital Markets Services license No. CMS100635 () to deal in securities by the Monetary Authority of Singapore (the “"), which allows IC SG to facilitate the primary offer and issuance of securities and act as an intermediary between issuers and investors. In addition, IC SG is licensed by the Authority as a recognised market operator to operate an organised market in respect of securities and units in collective investment schemes, the property of which consists only of capital markets products. (the “”).The Organized Market allows investors to purchase securities from, and sell securities to other investors.
+div (['smallest-text', '_12']): The InvestaX platform (“”) is a licensed and globally accessible digital asset investment platform that is at the forefront of technological innovation within the global financial services industry. It leverages distributed ledger technology and capital market innovations in the security or real-world asset (“”) token sector delivering smooth secondary market trading and added value for token holders.
+div (['smallest-text', '_12']): By accessing this website or any of its subdomains, you agree to the InvestaX Platform's Terms of Use and Privacy Policy.The InvestaX Platform is designed for accredited, institutional and expert investors who are aware of and accept the risks involved with private investments. Please note that investments offered on the InvestaX Platform are not bank deposits and carry no guarantees.‍All products and services provided by the InvestaX Platform are offered on an "as-is" basis without any warranties. IC SG, its affiliates, and representatives shall not be held liable for any damages or losses, including punitive, special, or indirect damages, resulting from the use of the InvestaX Platform. The InvestaX Platform does not accept users from the United States or sanctioned countries. Access to the InvestaX Platform’s products and services requires users to fulfill all due diligence requirements, including comprehensive know-your-customer (KYC) and anti-money laundering (AML) checks.‍
+div (['text-block-7', '_2', 'left-align', '_123213']): Copyright © 2026 IC SG Pte. Ltd., All rights reserved.

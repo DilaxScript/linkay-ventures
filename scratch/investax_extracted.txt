@@ -1,0 +1,9 @@
+=== TITLE ===
+Licensed Real World asset Tokenization Platform
+
+=== ALL HEADINGS & TEXT IN MAIN ===
+H1: Licensed Tokenization Platform
+H2: WE WORK WITHGLOBAL BRANDS
+H2: One-stop Shop Solution for Asset Tokenization
+H2: Platform Benefits
+H1: Asset Tokenization Process
