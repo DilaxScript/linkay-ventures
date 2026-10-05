@@ -32,7 +32,7 @@ export default function ServicesPage() {
     {
       num: '02',
       title: 'Bonds and Funds',
-      desc: 'Venture Bonds: Structured financial instruments tailored to provide startups with flexible capital while offering competitive returns to investors. Thematic Funds: Our managed funds focus on specific industries or impact areas such as renewable energy, AI, and healthcare innovation.',
+      desc: 'Venture Bonds for flexible capital with competitive returns. Thematic Funds focused on renewable energy, AI, and healthcare innovation.',
       icon: Landmark,
       tag: 'Structured Capital',
     },
@@ -123,7 +123,9 @@ export default function ServicesPage() {
 
   return (
     <main className="w-full bg-white text-gray-900 font-sans antialiased overflow-x-hidden selection:bg-orange-500 selection:text-white">
-      {/* 1. HERO BANNER — Same as RWA page */}
+      {/* ============================================================
+          1. HERO BANNER — BackgroundLines
+      ============================================================ */}
       <BackgroundLines className="relative w-full overflow-hidden border-b border-gray-200/80 bg-gradient-to-b from-gray-50 via-white to-white">
         <section className="relative flex min-h-[520px] w-full items-center justify-center px-5 py-20 sm:px-8 sm:py-24 md:px-12 md:py-28 lg:py-32">
           <div className="relative z-10 mx-auto flex w-full max-w-[1100px] flex-col items-center text-center">
@@ -179,7 +181,7 @@ export default function ServicesPage() {
                     size={16}
                     className="shrink-0 text-orange-500 sm:h-5 sm:w-5 lg:h-6 lg:w-6"
                   />
-                  <span>Advisory & Mentorship</span>
+                  <span>Advisory &amp; Mentorship</span>
                 </div>
                 <div className="flex items-center gap-2 sm:gap-2.5">
                   <Activity
@@ -194,7 +196,9 @@ export default function ServicesPage() {
         </section>
       </BackgroundLines>
 
-      {/* 2. INVESTMENT SOLUTIONS — Light section with split intro + card grid */}
+      {/* ============================================================
+          2. INVESTMENT SOLUTIONS — Light section
+      ============================================================ */}
       <section className="w-full py-20 px-6 sm:px-12 lg:px-16 max-w-[1240px] mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center mb-14">
           <div className="lg:col-span-7">
@@ -225,34 +229,33 @@ export default function ServicesPage() {
           </div>
         </div>
 
-        {/* 4 service cards in 2-col grid on tablet+, 4-col on desktop */}
+        {/* 4 uniform cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {investmentSolutions.map((item, idx) => {
             const IconComp = item.icon;
             return (
               <div
                 key={idx}
-                className="group bg-white p-6 rounded-2xl border border-gray-200/90 shadow-2xs hover:shadow-md transition-all duration-200 flex flex-col justify-between"
+                className="group bg-white p-6 rounded-2xl border border-gray-200/90 shadow-[0_1px_3px_rgba(0,0,0,0.04)] hover:shadow-md hover:border-gray-300 transition-all duration-200 flex flex-col"
               >
-                <div>
-                  <div className="flex items-center justify-between mb-4">
-                    <div className="w-10 h-10 rounded-xl bg-gray-50 border border-gray-200 flex items-center justify-center text-gray-700 group-hover:text-orange-500 group-hover:border-orange-200 transition-colors">
-                      <IconComp size={19} />
-                    </div>
-                    <span className="text-[11px] font-mono text-gray-500 bg-gray-100 px-2 py-0.5 rounded border border-gray-200/60">
-                      {item.num}
-                    </span>
+                <div className="flex items-center justify-between mb-4">
+                  <div className="w-10 h-10 rounded-xl bg-gray-50 border border-gray-200 flex items-center justify-center text-gray-700 group-hover:text-orange-500 group-hover:border-orange-200 transition-colors">
+                    <IconComp size={19} />
                   </div>
-
-                  <h3 className="font-poppins text-gray-900 text-[18px] font-bold mb-2 group-hover:text-orange-600 transition-colors leading-tight">
-                    {item.title}
-                  </h3>
-                  <p className="font-red-hat text-gray-600 text-[14px] leading-relaxed">
-                    {item.desc}
-                  </p>
+                  <span className="text-[11px] font-mono text-gray-500 bg-gray-100 px-2 py-0.5 rounded border border-gray-200/60">
+                    {item.num}
+                  </span>
                 </div>
 
-                <div className="mt-5 pt-3 border-t border-gray-100">
+                <h3 className="font-poppins text-gray-900 text-[18px] font-bold mb-3 group-hover:text-orange-600 transition-colors leading-[1.35] min-h-[48px]">
+                  {item.title}
+                </h3>
+
+                <p className="font-red-hat text-gray-600 text-[14px] leading-[1.7] flex-1">
+                  {item.desc}
+                </p>
+
+                <div className="mt-5 pt-4 border-t border-gray-100">
                   <span className="text-[11px] font-semibold uppercase tracking-wider text-orange-500">
                     {item.tag}
                   </span>
@@ -263,7 +266,9 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* 3. ADVISORY & MENTORSHIP — Dark section (same as RWA tech stack) */}
+      {/* ============================================================
+          3. ADVISORY & MENTORSHIP — Dark section
+      ============================================================ */}
       <section className="w-full bg-gray-950 py-20 px-6 sm:px-12 lg:px-16 text-white relative">
         <div className="max-w-[1240px] mx-auto relative z-10">
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-14 gap-6">
@@ -284,27 +289,26 @@ export default function ServicesPage() {
               return (
                 <div
                   key={idx}
-                  className="group bg-gray-900/80 hover:bg-gray-900 p-6 rounded-2xl border border-gray-800 hover:border-gray-700 transition-all duration-200 flex flex-col justify-between"
+                  className="group bg-gray-900/80 hover:bg-gray-900 p-6 rounded-2xl border border-gray-800 hover:border-gray-700 transition-all duration-200 flex flex-col"
                 >
-                  <div>
-                    <div className="flex items-center justify-between mb-4">
-                      <div className="w-10 h-10 rounded-xl bg-gray-800 border border-gray-700 flex items-center justify-center text-gray-300 group-hover:text-orange-400 group-hover:border-orange-500/40 transition-colors">
-                        <IconComp size={19} />
-                      </div>
-                      <span className="text-[11px] font-mono text-gray-400 bg-gray-800/80 px-2 py-0.5 rounded border border-gray-700/60">
-                        {item.num}
-                      </span>
+                  <div className="flex items-center justify-between mb-4">
+                    <div className="w-10 h-10 rounded-xl bg-gray-800 border border-gray-700 flex items-center justify-center text-gray-300 group-hover:text-orange-400 group-hover:border-orange-500/40 transition-colors">
+                      <IconComp size={19} />
                     </div>
-
-                    <h3 className="font-poppins text-white text-[19px] font-bold mb-2 group-hover:text-orange-400 transition-colors">
-                      {item.title}
-                    </h3>
-                    <p className="font-red-hat text-gray-400 text-[14px] leading-relaxed">
-                      {item.desc}
-                    </p>
+                    <span className="text-[11px] font-mono text-gray-400 bg-gray-800/80 px-2 py-0.5 rounded border border-gray-700/60">
+                      {item.num}
+                    </span>
                   </div>
 
-                  <div className="mt-5 pt-3 border-t border-gray-800">
+                  <h3 className="font-poppins text-white text-[18px] font-bold mb-3 group-hover:text-orange-400 transition-colors leading-[1.35] min-h-[48px]">
+                    {item.title}
+                  </h3>
+
+                  <p className="font-red-hat text-gray-400 text-[14px] leading-[1.7] flex-1">
+                    {item.desc}
+                  </p>
+
+                  <div className="mt-5 pt-4 border-t border-gray-800">
                     <span className="text-[11px] font-semibold uppercase tracking-wider text-orange-400">
                       {item.tag}
                     </span>
@@ -316,9 +320,10 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* 4. INNOVATION ECOSYSTEM — Light section with 3+2 card grid + bottom image */}
+      {/* ============================================================
+          4. INNOVATION ECOSYSTEM — Light section, 3-2 layout
+      ============================================================ */}
       <section className="w-full py-20 px-6 sm:px-12 lg:px-16 max-w-[1240px] mx-auto">
-        {/* Intro */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center mb-16">
           <div className="lg:col-span-7">
             <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-orange-50 border border-orange-100 text-orange-600 text-[11px] font-semibold uppercase tracking-[0.08em] mb-4">
@@ -352,38 +357,37 @@ export default function ServicesPage() {
           </div>
         </div>
 
-        {/* Cards grid — 5 cards, clean 3-2 layout */}
+        {/* 5 cards — 3-2 balanced layout */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-5">
           {ecosystemServices.map((item, idx) => {
             const IconComp = item.icon;
-            const isLastTwo = idx >= ecosystemServices.length - 2; // last 2 cards
+            const isLastTwo = idx >= ecosystemServices.length - 2;
 
             return (
               <div
                 key={idx}
-                className={`group bg-white p-6 rounded-2xl border border-gray-200/90 shadow-[0_1px_3px_rgba(0,0,0,0.04)] hover:shadow-md hover:border-gray-300 transition-all duration-200 flex flex-col justify-between ${
+                className={`group bg-white p-6 rounded-2xl border border-gray-200/90 shadow-[0_1px_3px_rgba(0,0,0,0.04)] hover:shadow-md hover:border-gray-300 transition-all duration-200 flex flex-col ${
                   isLastTwo ? 'lg:col-span-3' : 'lg:col-span-2'
                 }`}
               >
-                <div>
-                  <div className="flex items-center justify-between mb-4">
-                    <div className="w-10 h-10 rounded-xl bg-gray-50 border border-gray-200 flex items-center justify-center text-gray-700 group-hover:text-orange-500 group-hover:border-orange-200 transition-colors">
-                      <IconComp size={19} />
-                    </div>
-                    <span className="text-[11px] font-mono text-gray-500 bg-gray-100 px-2 py-0.5 rounded border border-gray-200/60">
-                      {item.num}
-                    </span>
+                <div className="flex items-center justify-between mb-4">
+                  <div className="w-10 h-10 rounded-xl bg-gray-50 border border-gray-200 flex items-center justify-center text-gray-700 group-hover:text-orange-500 group-hover:border-orange-200 transition-colors">
+                    <IconComp size={19} />
                   </div>
-
-                  <h3 className="font-poppins text-gray-900 text-[18px] font-bold mb-2 group-hover:text-orange-600 transition-colors leading-tight">
-                    {item.title}
-                  </h3>
-                  <p className="font-red-hat text-gray-600 text-[14px] leading-relaxed">
-                    {item.desc}
-                  </p>
+                  <span className="text-[11px] font-mono text-gray-500 bg-gray-100 px-2 py-0.5 rounded border border-gray-200/60">
+                    {item.num}
+                  </span>
                 </div>
 
-                <div className="mt-5 pt-3 border-t border-gray-100">
+                <h3 className="font-poppins text-gray-900 text-[18px] font-bold mb-3 group-hover:text-orange-600 transition-colors leading-[1.35] min-h-[48px]">
+                  {item.title}
+                </h3>
+
+                <p className="font-red-hat text-gray-600 text-[14px] leading-[1.7] flex-1">
+                  {item.desc}
+                </p>
+
+                <div className="mt-5 pt-4 border-t border-gray-100">
                   <span className="text-[11px] font-semibold uppercase tracking-wider text-orange-500">
                     {item.tag}
                   </span>
@@ -392,12 +396,11 @@ export default function ServicesPage() {
             );
           })}
         </div>
-
-        {/* Large bottom image */}
-        
       </section>
 
-      {/* 5. VENTURE HUB CTA — Dark banner (same as RWA bottom CTA) */}
+      {/* ============================================================
+          5. VENTURE HUB CTA
+      ============================================================ */}
       <section className="w-full px-6 sm:px-12 lg:px-16 pb-20 max-w-[1240px] mx-auto">
         <div className="p-8 sm:p-12 rounded-3xl bg-gray-950 text-white border border-gray-800 text-center relative max-w-[960px] mx-auto">
           <div className="relative z-10 max-w-2xl mx-auto">

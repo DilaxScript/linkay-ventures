@@ -1,17 +1,21 @@
-import React from 'react';
+'use client';
+
+import React, { useState } from 'react';
 import Image from 'next/image';
-import type { Metadata } from 'next';
 import Link from 'next/link';
-import { ArrowRight, CheckCircle2, ShieldCheck, Activity } from 'lucide-react';
+import {
+  ArrowRight,
+  CheckCircle2,
+  ShieldCheck,
+  Activity,
+  ChevronDown,
+  ChevronUp,
+} from 'lucide-react';
 import { BackgroundLines } from '@/components/ui/background-lines';
 
-export const metadata: Metadata = {
-  title: 'About Us – Linkay Ventures',
-  description:
-    'Linkay Ventures was founded with a singular purpose: to support groundbreaking ideas and visionary founders who seek to make a difference.',
-};
-
 export default function AboutPage() {
+  const [showFounderBio, setShowFounderBio] = useState(false);
+
   const steps = [
     {
       id: 1,
@@ -52,7 +56,7 @@ export default function AboutPage() {
 
   return (
     <main className="w-full bg-white text-gray-900 font-sans antialiased overflow-x-hidden selection:bg-orange-500 selection:text-white">
-      {/* 1. HERO BANNER — Same as RWA page style */}
+      {/* 1. HERO BANNER */}
       <BackgroundLines className="relative w-full overflow-hidden border-b border-gray-200/80 bg-gradient-to-b from-gray-50 via-white to-white">
         <section className="relative flex min-h-[520px] w-full items-center justify-center px-5 py-20 sm:px-8 sm:py-24 md:px-12 md:py-28 lg:py-32">
           <div className="relative z-10 mx-auto flex w-full max-w-[1100px] flex-col items-center text-center">
@@ -72,7 +76,7 @@ export default function AboutPage() {
               Supporting groundbreaking ideas and visionary founders who seek to make a difference.
             </p>
 
-            {/* Buttons — same as RWA hero */}
+            {/* Buttons */}
             <div className="flex w-full flex-col gap-3 sm:w-auto sm:flex-row sm:flex-wrap sm:items-center sm:justify-center sm:gap-4">
               <Link
                 href="/contact"
@@ -90,7 +94,7 @@ export default function AboutPage() {
               </Link>
             </div>
 
-            {/* Feature strip — same as RWA hero */}
+            {/* Feature strip */}
             <div className="mt-10 w-full max-w-[820px] border-t border-gray-200 pt-6 sm:mt-12 sm:max-w-[900px] sm:pt-8 lg:max-w-[1000px]">
               <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-[10px] font-medium uppercase tracking-wider text-gray-600 sm:gap-x-8 sm:text-[12px] md:text-[13px] lg:gap-x-10 lg:text-[15px]">
                 <div className="flex items-center gap-2 sm:gap-2.5">
@@ -120,7 +124,7 @@ export default function AboutPage() {
         </section>
       </BackgroundLines>
 
-      {/* 2. OUR STORY — Split section (same layout language as RWA "Finance with expert leaders") */}
+      {/* 2. OUR STORY */}
       <section className="w-full py-20 px-6 sm:px-12 lg:px-16 max-w-[1240px] mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           <div className="lg:col-span-7">
@@ -157,7 +161,7 @@ export default function AboutPage() {
             </div>
           </div>
 
-          {/* Image — same style as RWA page's image boxes */}
+          {/* Image */}
           <div className="lg:col-span-5">
             <div className="relative w-full h-[360px] sm:h-[440px] overflow-hidden rounded-2xl bg-gray-100 shadow-lg">
               <Image
@@ -174,7 +178,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* 3. OUR APPROACH — Dark section (same as RWA "Technology Stack") */}
+      {/* 3. OUR APPROACH */}
       <section className="w-full bg-gray-950 py-20 px-6 sm:px-12 lg:px-16 text-white relative">
         <div className="max-w-[1240px] mx-auto relative z-10">
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-14 gap-6">
@@ -189,7 +193,6 @@ export default function AboutPage() {
             </div>
           </div>
 
-          {/* 4-step grid, same card style as RWA tech stack */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {steps.map((step) => (
               <div
@@ -216,7 +219,6 @@ export default function AboutPage() {
                   </p>
                 </div>
 
-                {/* Icon badge bottom-right */}
                 <div className="mt-6 flex justify-end">
                   <div className="relative w-12 h-12 rounded-lg overflow-hidden bg-gray-800 border border-gray-700 p-2">
                     <Image
@@ -234,27 +236,27 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* 4. TEAM — Light section with card grid (same as RWA "Why RWA" style) */}
+      {/* 4. TEAM SECTION */}
       <section className="w-full py-20 px-6 sm:px-12 lg:px-16 max-w-[1340px] mx-auto">
-        <div className="text-center max-w-[850px] mx-auto mb-14">
-          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-gray-100 border border-gray-200 text-gray-700 text-xs font-semibold uppercase tracking-wider mb-3">
-            <span className="w-1.5 h-1.5 rounded-full bg-orange-500" />
+        <div className="text-center max-w-[850px] mx-auto mb-16">
+          <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-orange-50 border border-orange-100 text-orange-600 text-[11px] font-semibold uppercase tracking-[0.08em] mb-4">
+            <span className="w-1.5 h-1.5 rounded-full bg-orange-500 animate-pulse" />
             Our Team
           </span>
-          <h2 className="font-poppins text-gray-900 text-[30px] sm:text-[42px] font-bold leading-tight mb-4">
+          <h2 className="font-poppins text-gray-900 text-[32px] sm:text-[42px] font-bold leading-[1.15] tracking-tight mb-5">
             The Experts Behind Linkay Ventures
           </h2>
-          <p className="font-red-hat text-gray-600 text-[16px] sm:text-[17px] leading-relaxed">
+          <p className="font-red-hat text-gray-600 text-[16px] sm:text-[17px] leading-relaxed max-w-[700px] mx-auto">
             Meet the experts behind Linkay Ventures. Our team brings together seasoned investors,
             industry veterans, and technology innovators, each dedicated to fueling the growth of
             high-impact startups.
           </p>
-          <div className="w-16 h-1 bg-orange-500 mx-auto mt-6 rounded-full" />
+          <div className="w-14 h-1 bg-orange-500 mx-auto mt-6 rounded-full" />
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 items-start">
-          {/* Founder */}
-          <div className="bg-white p-8 sm:p-10 rounded-2xl border border-gray-200/90 shadow-2xs hover:shadow-md transition-all duration-200">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 items-stretch">
+          {/* ============ Founder Card ============ */}
+          <div className="bg-white p-8 sm:p-10 rounded-2xl border border-gray-200/90 shadow-[0_1px_3px_rgba(0,0,0,0.04)] hover:shadow-md hover:border-gray-300 transition-all duration-200 flex flex-col">
             <div className="flex items-center justify-between mb-6 pb-4 border-b border-gray-100">
               <div>
                 <span className="text-[11px] font-semibold uppercase tracking-wider text-orange-500">
@@ -268,13 +270,15 @@ export default function AboutPage() {
                 <CheckCircle2 size={18} />
               </div>
             </div>
-            <div className="space-y-4 font-red-hat text-gray-600 text-[15px] sm:text-[16px] leading-[1.8]">
+
+            <div className="space-y-4 font-red-hat text-gray-600 text-[15px] sm:text-[16px] leading-[1.8] text-left sm:text-justify">
+              {/* Always visible */}
               <p>
-                Kay Satha is the visionary founder of Linkay Ventures, leading the firm's mission to
-                empower startups and accelerate innovation across emerging industries. With nearly
-                three decades of experience in entrepreneurship, investment strategy, and venture
-                building across the United States and Canada, she has guided numerous companies from
-                concept to market leadership.
+                Kay Satha is the visionary founder of Linkay Ventures, leading the firm&apos;s
+                mission to empower startups and accelerate innovation across emerging industries.
+                With nearly three decades of experience in entrepreneurship, investment strategy,
+                and venture building across the United States and Canada, she has guided numerous
+                companies from concept to market leadership.
               </p>
               <p>
                 Her expertise lies in identifying scalable opportunities, aligning capital with
@@ -283,27 +287,53 @@ export default function AboutPage() {
                 positioned Linkay Ventures as a trusted partner for founders seeking long-term value
                 creation rather than short-term gains.
               </p>
-              <p>
-                Kay is actively engaged in applying tokenization strategies that transform AI-driven
-                assets, proprietary platforms, and digital innovations into structured,
-                blockchain-backed instruments with tangible commercial value. Her work focuses on
-                making emerging technologies investable by designing monetization pathways that
-                align with user needs, investor expectations, and global market standards. By
-                integrating ethical AI principles with practical revenue frameworks, she helps
-                startups and technology ventures progress from proof-of-concept to commercially
-                scalable, investor-ready products.
-              </p>
-              <p>
-                Kay maintains strong relationships with a global network of decision-makers and
-                investors, playing an active role in capital raising, investment structuring, and
-                strategic business development. Her work spans infrastructure, technology, fintech,
-                and energy sectors.
-              </p>
+
+              {/* Hidden — reveals on Read More */}
+              {showFounderBio && (
+                <>
+                  <p>
+                    Kay is actively engaged in applying tokenization strategies that transform
+                    AI-driven assets, proprietary platforms, and digital innovations into
+                    structured, blockchain-backed instruments with tangible commercial value. Her
+                    work focuses on making emerging technologies investable by designing
+                    monetization pathways that align with user needs, investor expectations, and
+                    global market standards. By integrating ethical AI principles with practical
+                    revenue frameworks, she helps startups and technology ventures progress from
+                    proof-of-concept to commercially scalable, investor-ready products.
+                  </p>
+                  <p>
+                    Kay maintains strong relationships with a global network of decision-makers and
+                    investors, playing an active role in capital raising, investment structuring,
+                    and strategic business development. Her work spans infrastructure, technology,
+                    fintech, and energy sectors.
+                  </p>
+                </>
+              )}
+            </div>
+
+            {/* Read More / Read Less */}
+            <div className="mt-6 pt-4 border-t border-gray-100">
+              <button
+                onClick={() => setShowFounderBio((prev) => !prev)}
+                className="inline-flex items-center gap-2 font-poppins text-[14px] font-semibold text-orange-500 hover:text-orange-600 transition-colors"
+              >
+                {showFounderBio ? (
+                  <>
+                    Read Less
+                    <ChevronUp size={16} />
+                  </>
+                ) : (
+                  <>
+                    Read More
+                    <ChevronDown size={16} />
+                  </>
+                )}
+              </button>
             </div>
           </div>
 
-          {/* Advisor */}
-          <div className="bg-white p-8 sm:p-10 rounded-2xl border border-gray-200/90 shadow-2xs hover:shadow-md transition-all duration-200">
+          {/* ============ Advisor Card ============ */}
+          <div className="bg-white p-8 sm:p-10 rounded-2xl border border-gray-200/90 shadow-[0_1px_3px_rgba(0,0,0,0.04)] hover:shadow-md hover:border-gray-300 transition-all duration-200 flex flex-col">
             <div className="flex items-center justify-between mb-6 pb-4 border-b border-gray-100">
               <div>
                 <span className="text-[11px] font-semibold uppercase tracking-wider text-orange-500">
@@ -318,21 +348,25 @@ export default function AboutPage() {
               </div>
             </div>
 
-            <div className="bg-gray-50 border border-gray-200/80 p-4 rounded-xl text-gray-800 text-[14px] sm:text-[15px] leading-[1.7] mb-5">
-              <p className="font-semibold">BSc. (Eng.) U.K., MSc.(Eng.), U.K.</p>
-              <p>P.E, P.T.O.E(USA), PEng. IntPE. (Canada), MITE(USA), MIHT(UK).</p>
-              <p className="text-orange-500 font-semibold mt-1">
+            {/* Credential box — always visible */}
+            <div className="bg-orange-50/50 border border-orange-100 p-5 rounded-xl text-gray-800 text-[15px] sm:text-[16px] leading-[1.8] mb-5 text-left sm:text-justify font-red-hat">
+              <p className="font-semibold text-gray-900">BSc. (Eng.) U.K., MSc. (Eng.), U.K.</p>
+              <p className="text-gray-700">
+                P.E, P.T.O.E (USA), PEng. IntPE. (Canada), MITE (USA), MIHT (UK).
+              </p>
+              <p className="text-orange-600 font-semibold mt-3 leading-[1.6]">
                 President and CEO, Chair Advisory Board, International Professional Engineer,
                 Entrepreneur, Inventor &amp; Investor.
               </p>
             </div>
 
-            <div className="font-red-hat text-gray-600 text-[15px] sm:text-[16px] leading-[1.8]">
+            {/* Full bio — always visible (no hidden content) */}
+            <div className="font-red-hat text-gray-600 text-[15px] sm:text-[16px] leading-[1.8] text-left sm:text-justify">
               <p>
                 As a seasoned advisor at Linkay Ventures, Lincoln brings a wealth of industry
                 knowledge and strategic insights to the team. With a proven track record in venture
                 capital, corporate innovation, and scaling startups, Lincoln plays a pivotal role in
-                shaping Linkay Ventures' strategic direction. His expertise in identifying
+                shaping Linkay Ventures&apos; strategic direction. His expertise in identifying
                 high-potential opportunities and fostering meaningful partnerships ensures startups
                 in the Linkay portfolio receive unparalleled guidance and support.
               </p>
@@ -341,12 +375,12 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* 5. BOTTOM CTA — Same dark banner as RWA page */}
+      {/* 5. BOTTOM CTA */}
       <section className="w-full px-6 sm:px-12 lg:px-16 pb-20 max-w-[1240px] mx-auto">
         <div className="p-8 sm:p-12 rounded-3xl bg-gray-950 text-white border border-gray-800 text-center relative max-w-[960px] mx-auto">
           <div className="relative z-10 max-w-2xl mx-auto">
             <span className="text-xs uppercase tracking-widest text-orange-400 font-semibold mb-2 block">
-              Let's Build Together
+              Let&apos;s Build Together
             </span>
             <h3 className="font-poppins text-2xl sm:text-3xl font-bold mb-4">
               Ready to Turn Your Vision into a Venture?
