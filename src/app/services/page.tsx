@@ -218,7 +218,7 @@ export default function ServicesPage() {
           <div className="lg:col-span-5">
             <div className="relative w-full h-[320px] sm:h-[400px] overflow-hidden rounded-2xl bg-gray-100 shadow-lg">
               <Image
-                src="/images/kk1.jpg"
+                src="/images/service.jpeg"
                 alt="Investment Solutions"
                 fill
                 className="object-cover"
@@ -346,7 +346,7 @@ export default function ServicesPage() {
           <div className="lg:col-span-5">
             <div className="relative w-full h-[320px] sm:h-[400px] overflow-hidden rounded-2xl bg-gray-100 shadow-lg">
               <Image
-                src="/images/Innovation-Blueprint-6-Foundational-Elements-Of-An-Innovation-Ecosystem.jpg"
+                src="/images/service1.jpeg"
                 alt="Innovation Ecosystem"
                 fill
                 className="object-cover"

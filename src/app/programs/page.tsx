@@ -195,7 +195,7 @@ export default function ProgramsPage() {
           <div className="lg:col-span-5">
             <div className="relative w-full h-[360px] sm:h-[440px] overflow-hidden rounded-2xl bg-gray-100 shadow-lg">
               <Image
-                src="/images/Next-Generation-of-Innovators-1024x576.webp"
+                src="/images/program.jpeg"
                 alt="Empowering the Next Generation of Innovators"
                 fill
                 priority
@@ -346,7 +346,7 @@ export default function ProgramsPage() {
           <div className="lg:col-span-5">
             <div className="relative w-full h-[360px] sm:h-[440px] overflow-hidden rounded-2xl bg-gray-950 shadow-xl">
               <Image
-                src="/images/0x0.webp"
+                src="/images/program3.jpeg"
                 alt="Adaptive Growth Programs"
                 fill
                 priority

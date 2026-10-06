@@ -49,7 +49,7 @@ export default function NewsletterSection() {
           <div className="lg:col-span-5 order-2 lg:order-1">
             <div className="relative w-full h-[320px] sm:h-[420px] lg:h-[480px] rounded-2xl overflow-hidden bg-gray-900 shadow-xl border border-gray-800 group">
               <Image
-                src="/images/newsletter-subscription.webp"
+                src="/images/home3.jpeg"
                 alt="Stay Up to Date on Funds, Trends and Insights"
                 fill
                 priority
@@ -59,23 +59,6 @@ export default function NewsletterSection() {
 
               {/* Dark gradient overlay for depth */}
               <div className="absolute inset-0 bg-gradient-to-t from-gray-950/70 via-gray-950/10 to-transparent pointer-events-none" />
-
-              {/* Floating badge */}
-              <div className="absolute bottom-5 left-5 right-5 bg-gray-900/95 backdrop-blur-sm border border-gray-800 rounded-xl px-4 py-3 shadow-lg">
-                <div className="flex items-center gap-3">
-                  <div className="w-9 h-9 rounded-lg bg-orange-500/15 border border-orange-500/30 flex items-center justify-center text-orange-400 shrink-0">
-                    <Mail size={16} />
-                  </div>
-                  <div>
-                    <p className="font-poppins text-white text-[13px] font-bold leading-tight">
-                      Weekly Newsletter
-                    </p>
-                    <p className="font-red-hat text-gray-400 text-[11.5px] leading-tight">
-                      No spam. Unsubscribe anytime.
-                    </p>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
 

@@ -72,11 +72,13 @@ export default function Navbar() {
           : 'bg-white border-b border-gray-100'
       }`}
     >
+      {/* ✅ Navbar height: 88px (unchanged) */}
       <div className="max-w-[1300px] mx-auto px-4 sm:px-6 lg:px-8 h-[88px] flex items-center justify-between">
-        {/* Brand Logo & Studio Tag */}
+        {/* Brand Logo */}
         <div className="flex items-center gap-4">
           <Link href="/" className="flex items-center group py-2">
-            <div className="relative w-[130px] sm:w-[150px] lg:w-[170px] h-[60px] sm:h-[66px] lg:h-[72px] transition-transform duration-200 group-hover:scale-105">
+            {/* ✅ Logo bigger: width increased a lot, height max-fit */}
+            <div className="relative w-[160px] sm:w-[180px] lg:w-[205px] h-[70px] sm:h-[78px] lg:h-[84px] transition-transform duration-200 group-hover:scale-105">
               <Image
                 src="/images/logo.png"
                 alt="Linkay Ventures"
@@ -86,7 +88,6 @@ export default function Navbar() {
               />
             </div>
           </Link>
-
         </div>
 
         {/* Desktop Navigation Links */}
@@ -120,7 +121,7 @@ export default function Navbar() {
                     />
                   </button>
 
-                  {/* Clean White Dropdown Menu */}
+                  {/* Dropdown Menu */}
                   <div
                     className={`absolute right-0 top-[65px] w-[260px] bg-white border border-gray-200 rounded-xl p-2 shadow-lg transition-all duration-200 z-50 ${
                       moreDropdownOpen
@@ -175,7 +176,6 @@ export default function Navbar() {
                     {item.badge}
                   </span>
                 )}
-                {/* Active Indicator Bar */}
                 {active && (
                   <span className="absolute bottom-0 left-3.5 right-3.5 h-[2px] bg-orange-500 rounded-full" />
                 )}

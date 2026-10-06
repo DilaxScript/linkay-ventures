@@ -11,16 +11,17 @@ export default function Footer() {
       <div className="max-w-[1300px] mx-auto px-6 sm:px-8 lg:px-12 pt-16 pb-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-12 pb-14 border-b border-gray-200">
           {/* Column 1: Brand & Bio (4 cols) */}
-          <div className="lg:col-span-4 space-y-5">
-            <Link href="/" className="inline-block group">
-              <div className="relative w-[115px] h-[52px] transition-transform duration-200 group-hover:scale-102">
-                <Image
-                  src="/images/logo.png"
-                  alt="Linkay Ventures"
-                  fill
-                  className="object-contain"
-                />
-              </div>
+          <div className="lg:col-span-4">
+            {/* ✅ Logo — இன்னும் மேல நகர்த்தப்பட்டது (-mt-4) */}
+            <Link href="/" className="inline-flex items-center group mb-2 -mt-4">
+              <Image
+                src="/images/logo.png"
+                alt="Linkay Ventures"
+                width={420}
+                height={120}
+                className="w-[170px] sm:w-[190px] lg:w-[210px] h-auto transition-transform duration-200 group-hover:scale-105"
+                priority
+              />
             </Link>
 
             <p className="font-red-hat text-gray-600 text-[14px] leading-relaxed max-w-[340px]">
@@ -29,7 +30,7 @@ export default function Footer() {
             </p>
 
             {/* Quick Contact Items */}
-            <div className="space-y-2.5 pt-2 font-red-hat text-[14px]">
+            <div className="space-y-2.5 pt-4 font-red-hat text-[14px]">
               <a
                 href="tel:+19178168128"
                 className="group flex items-center gap-3 text-gray-700 hover:text-gray-900 transition-colors"
@@ -59,7 +60,7 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Column 2: Platform & Ecosystem (2.5 cols) */}
+          {/* Column 2: Platform & Ecosystem (3 cols) */}
           <div className="lg:col-span-3">
             <h4 className="font-poppins text-gray-900 text-[14.5px] font-bold uppercase tracking-wider mb-5 flex items-center gap-2">
               <span className="w-1.5 h-1.5 rounded-full bg-orange-500" />
@@ -95,7 +96,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/rwa-tokenization"
-                  className="text-gray-900  hover:text-gray-900 transition-colors"
+                  className="text-gray-900 hover:text-gray-900 transition-colors"
                 >
                   <span>RWA Tokenization</span>
                 </Link>
@@ -119,7 +120,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Column 3: Legal & Resources (2.5 cols) */}
+          {/* Column 3: Legal & Resources (2 cols) */}
           <div className="lg:col-span-2">
             <h4 className="font-poppins text-gray-900 text-[14.5px] font-bold uppercase tracking-wider mb-5 flex items-center gap-2">
               <span className="w-1.5 h-1.5 rounded-full bg-orange-500" />
@@ -204,7 +205,7 @@ export default function Footer() {
           </div>
 
           <div className="flex items-center gap-6">
-            <span className="text-gray-500">
+            <span className="text-gray-500 text-center sm:text-right">
               Institutional Multi-RWA Tokenization &amp; Venture Infrastructure
             </span>
           </div>

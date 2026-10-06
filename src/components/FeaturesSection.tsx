@@ -68,7 +68,7 @@ export default function FeaturesSection() {
           <div className="lg:col-span-5">
             <div className="relative w-full h-[340px] sm:h-[440px] lg:h-[480px] rounded-2xl overflow-hidden bg-gray-100 shadow-lg border border-gray-200/90 group">
               <Image
-                src="/images/features-ideation.jpg"
+                src="/images/home.jpeg"
                 alt="Finance with expert leaders in the US"
                 fill
                 priority
@@ -80,21 +80,7 @@ export default function FeaturesSection() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-transparent pointer-events-none" />
 
               {/* Floating trust badge */}
-              <div className="absolute bottom-5 left-5 right-5 bg-white/95 backdrop-blur-sm border border-gray-200/60 rounded-xl px-4 py-3 shadow-md">
-                <div className="flex items-center gap-3">
-                  <div className="w-9 h-9 rounded-lg bg-orange-500/10 border border-orange-500/20 flex items-center justify-center text-orange-500 shrink-0">
-                    <ShieldCheck size={16} />
-                  </div>
-                  <div>
-                    <p className="font-poppins text-gray-900 text-[13px] font-bold leading-tight">
-                      Trusted by Founders Worldwide
-                    </p>
-                    <p className="font-red-hat text-gray-500 text-[11.5px] leading-tight">
-                      AI · Fintech · Deep-Tech · Infrastructure
-                    </p>
-                  </div>
-                </div>
-              </div>
+
             </div>
           </div>
         </div>

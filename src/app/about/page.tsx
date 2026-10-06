@@ -137,7 +137,7 @@ export default function AboutPage() {
             </h2>
             <div className="w-12 h-1 bg-orange-500 mb-6 rounded-full" />
             <p className="font-red-hat text-gray-600 text-[16px] sm:text-[18px] leading-relaxed mb-6 font-normal">
-              Linkay Ventures was founded with a singular purpose: to support groundbreaking ideas
+              Linkay Ventures was founded with a singular purpose. to support groundbreaking ideas
               and visionary founders who seek to make a difference. Our journey began with a
               commitment to impact-driven investment and has evolved into a trusted platform that
               combines financial resources with strategic insight.
@@ -165,7 +165,7 @@ export default function AboutPage() {
           <div className="lg:col-span-5">
             <div className="relative w-full h-[360px] sm:h-[440px] overflow-hidden rounded-2xl bg-gray-100 shadow-lg">
               <Image
-                src="/images/why-is-it-important-to-keep-a-journal-1024x683.jpg"
+                src="/images/about3.jpeg"
                 alt="Our Story - Linkay Ventures"
                 fill
                 priority
